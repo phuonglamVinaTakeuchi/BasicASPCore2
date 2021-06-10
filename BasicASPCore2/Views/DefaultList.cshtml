@@ -1,0 +1,21 @@
+﻿@model List<(string firstName,string lastName)>
+@{
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Tu hoc ICT</title>
+</head>
+<body>
+<div>
+    <ul>
+        @foreach (var i in Model)
+        {
+            <li>@i.firstName <b>@i.lastName</b></li>
+        }
+    </ul>
+</div>
+</body>
+
+</html>

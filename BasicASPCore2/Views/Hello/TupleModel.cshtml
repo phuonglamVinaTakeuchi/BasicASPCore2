@@ -1,0 +1,18 @@
+﻿@model (string FirstName, string LastName, DateTime BirthDay)
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TupleModel</title>
+</head>
+<body>
+<h1>Hello, @Model.FirstName <strong>@Model.LastName</strong></h1>
+<h1>Hello, @ViewData.Model.FirstName <strong>@Model.LastName</strong></h1>
+<h2>Your birthday is @Model.BirthDay</h2>
+</body>
+</html>
